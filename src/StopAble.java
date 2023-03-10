@@ -1,2 +1,6 @@
-package PACKAGE_NAME;public interface StopAble {
+public interface StopAble {
+    void allCars(Car[] car);
+    void passenger(Car[] car,String name) throws Exception;
+    void cars(Car[] cars,String name);
+
 }
