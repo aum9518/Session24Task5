@@ -11,7 +11,11 @@ public class StopAblelImpl implements StopAble{
        try {
            for (Car a : car) {
                if (a.getName().equals(name)) {
-                   System.out.println("Passengers: "+a.toString());
+                   if (a instanceof Bus) {
+                       System.out.println("Bus's passenger:" + ((Bus) a).getPeople());
+                   } else if (a instanceof Taxi) {
+                       System.out.println("Taxi's passenger" + ((Taxi) a).getPeople());
+                   }
                }
            }
        } catch (Exception e) {

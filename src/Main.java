@@ -45,10 +45,10 @@ public class Main {
         Car taxi = new Taxi("Taxi",Color.BLACK,4,500,people1);
         Car[] cars = {taxi,bus};
         StopAblelImpl stopAblel = new StopAblelImpl();
-        stopAblel.allCars(cars);
-        stopAblel.passenger(cars,"Bus");
-        stopAblel.cars(cars,"Bus");
-        bus.stop();
-        taxi.stop();
+       stopAblel.allCars(cars);
+        stopAblel.passenger(cars,"Taxi");
+       stopAblel.cars(cars,"Bus");
+       bus.stop();
+       taxi.stop();
     }
 }
